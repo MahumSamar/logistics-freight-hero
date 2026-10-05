@@ -8,7 +8,7 @@
 <link rel="preload" href="assets/fonts/display-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/ui-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/ui-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/images/freight-train-aerial.jpg" as="image">
+<link rel="preload" href="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261005_115944_095d91d4-030f-4e82-b42b-a388c0816d24.mp4" as="video" type="video/mp4">
 <style>
 /* ---------- faces (subset, metrics pinned so the layout is identical on every OS) ---------- */
 @font-face{font-family:Display;src:url(assets/fonts/display-800.woff2) format('woff2');
@@ -35,7 +35,7 @@ body{margin:0;background:#0a0b0c;overflow:hidden;
 }
 
 .frame{position:fixed;inset:0;overflow:hidden;background:#0a0b0c}
-.bg{position:absolute;inset:0;background:url(assets/images/freight-train-aerial.jpg) center center / cover no-repeat}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;background:#0a0b0c}
 .tint{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,
   rgba(0,0,0,0.118) 0%,
   rgba(0,0,0,0.092) 11%,
@@ -276,7 +276,9 @@ body{margin:0;background:#0a0b0c;overflow:hidden;
 </head>
 <body>
 <div class="frame">
-  <div class="bg" role="img" aria-label="Aerial view of a container freight train crossing black coal terrain"></div>
+  <video class="bg" autoplay muted loop playsinline disablepictureinpicture
+    aria-label="Aerial view of a container freight train crossing black coal terrain"
+    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261005_115944_095d91d4-030f-4e82-b42b-a388c0816d24.mp4"></video>
   <div class="tint"></div>
 
   <main class="stage">
